@@ -1,0 +1,43 @@
+{
+	"name": "SQLite Playground",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	
+	// Features to add to the dev container
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true
+		}
+	},
+
+	// Configure tool-specific properties
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.vscode-json",
+				"alexcvzz.vscode-sqlite",
+				"qwtel.sqlite-viewer"
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
+		}
+	},
+	"postCreateCommand": "chmod -R 444 .devcontainer 2>/dev/null || true && chmod 444 .gitignore 2>/dev/null || true",
+
+	// Use 'forwardPorts' to make a list of ports available locally
+	// "forwardPorts": [],
+
+	// Use 'portsAttributes' to set default properties for specific ports
+	// "portsAttributes": {},
+
+	// Uncomment to connect as root instead
+	// "remoteUser": "root"
+
+	// Set the default user to vscode
+	"remoteUser": "vscode"
+}
