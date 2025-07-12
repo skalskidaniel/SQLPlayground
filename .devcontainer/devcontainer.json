@@ -20,10 +20,16 @@
 			"extensions": [
 				"ms-vscode.vscode-json",
 				"alexcvzz.vscode-sqlite",
-				"qwtel.sqlite-viewer"
+				"qwtel.sqlite-viewer",
+				"ms-vsliveshare.vsliveshare",
+				"formulahendry.code-runner",
+				"GitHub.github-vscode-theme",
+				"keksiqc.idx-monospace-theme"
 			],
 			"settings": {
-				"terminal.integrated.defaultProfile.linux": "zsh"
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"workbench.colorTheme": "GitHub Dark",
+				"workbench.iconTheme": "monospace-icons"
 			}
 		}
 	},
