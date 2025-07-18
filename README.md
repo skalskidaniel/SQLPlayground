@@ -16,18 +16,20 @@
 **Aby otworzyć bazę danych w terminalu:**
 
 1. Otwórz terminal w VS Code (Terminal → New Terminal)
-2. Wpisz komendę: `sqlite3 school.db`
+2. Wpisz komendę: `sqlite3 races.db`
 3. Teraz możesz wykonywać zapytania SQL bezpośrednio w terminalu
 
 **Podstawowe komendy w terminalu sqlite3:**
+
 - `.help` - wyświetla listę dostępnych komend
 - `.tables` - wyświetla listę tabel w bazie danych
 - `.schema nazwa_tabeli` - wyświetla strukturę konkretnej tabeli
 - `.quit` - wychodzi z sqlite3
 
 **Przykład użycia w terminalu:**
+
 ```sql
-sqlite3 school.db
+sqlite3 races.db
 .tables
 SELECT * FROM students;
 .quit
@@ -43,13 +45,15 @@ SELECT * FROM students;
    - `SQLite: New Query` - tworzy nowy plik z zapytaniem SQL
    - `SQLite: Run Query` - wykonuje zapytanie SQL
 
-**Aby otworzyć bazę danych school.db:**
+**Aby otworzyć bazę danych races.db:**
+
 1. Naciśnij **Ctrl+Shift+P**
 2. Wpisz `SQLite: Open Database`
-3. Wybierz plik `school.db`
+3. Wybierz plik `races.db`
 4. Baza pojawi się w panelu bocznym SQLITE EXPLORER
 
 **Aby wykonać zapytanie SQL:**
+
 1. Utwórz nowy plik z rozszerzeniem `.sql`
 2. Napisz swoje zapytanie SQL
 3. Naciśnij **Ctrl+Shift+P**
@@ -65,6 +69,7 @@ SELECT * FROM students;
 - Używaj rozszerzenia SQLite lub terminala do wykonywania zapytań
 
 **Aby utworzyć nową bazę danych:**
+
 - W terminalu wpisz: `sqlite3 nazwa_bazy.db`
 - Automatycznie zostanie utworzona nowa baza danych
 
@@ -79,6 +84,7 @@ SELECT * FROM students;
 ## Przydatne zapytania SQL
 
 **Podstawowe operacje:**
+
 ```sql
 -- Wyświetlenie wszystkich rekordów z tabeli
 SELECT * FROM nazwa_tabeli;

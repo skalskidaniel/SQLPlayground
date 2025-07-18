@@ -1,2 +1,6 @@
 -- SQLite
-SELECT * FROM grades;
+SELECT * FROM Kierowcy;
+
+SELECT * FROM Wyscigi;
+
+SELECT * FROM Wyniki;
